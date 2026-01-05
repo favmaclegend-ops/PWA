@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Korlie - A Progressive Web App">
+    <title>Korlie</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icon/manifest-icon-192.maskable.png">
+    <link rel="apple-touch-icon" href="icon/apple-icon-180.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Korlie</h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Offline Support</h2>
+            <p>This app works offline thanks to service workers and Workbox.</p>
+        </section>
+
+        <section class="card">
+            <h2>Add to Home Screen</h2>
+            <p id="install-prompt">You can install this app on your device.</p>
+            <button id="install-btn" style="display:none;">Install App</button>
+        </section>
+
+        <section class="card">
+            <h2>Status</h2>
+            <p id="status">Loading...</p>
+        </section>
+
+        <section class="card logo-card">
+            <img src="icon/manifest-icon-512.maskable.png" alt="Korlie Logo">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Korlie PWA</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
